@@ -8,6 +8,7 @@ const createWindow = () => {
       nodeIntegration: true,
       contextIsolation: false,
     },
+    icon: 'favicon.ico'
   });
 
   win.loadFile("index.html");
