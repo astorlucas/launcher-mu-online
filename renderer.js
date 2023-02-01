@@ -1,5 +1,13 @@
 function executeMain() {
-  var oShell = new ActiveXObject("Shell.Application");
-  var commandtoRun = "C:\\Windows\\notepad.exe";
-  oShell.ShellExecute(commandtoRun, "", "", "open", "1");
+  var exec = require("child_process").exec;
+  exec(
+    "main.exe",
+    (err, stdout, stderr) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
+      console.log(stdout);
+    }
+  );
 }

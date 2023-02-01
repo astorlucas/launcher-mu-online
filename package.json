@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^22.1.0"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3"
   }
 }
