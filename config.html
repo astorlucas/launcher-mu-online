@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./skeleton.css">
-    <title>Nostalgy MU - LAUNCHER</title>
+    <link rel="stylesheet" href="./skeleton.css" />
+    <title>Nostalgy MU - CONFIGURATION</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body background="./bg.jpg">
     <h1>this is a test</h1>
     <div class="container">
-        <button onclick="executeConfig()" class="button-85">CONFIG</button>
+      <label class="radio">
+        <input name="radio" type="radio" checked />
+        <span>Awesome</span>
+      </label>
+      <label class="radio">
+        <input name="radio" type="radio" />
+        <span>Cool</span>
+      </label>
     </div>
     <p>👋</p>
-    <script src = "./renderer.js"></script>
+    <script src="./renderer.js"></script>
   </body>
 </html>

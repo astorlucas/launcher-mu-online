@@ -13,6 +13,6 @@ function executeConfig() {
   window.open(
     "config.html",
     "_blank",
-    "top=500,left=200,frame=false,nodeIntegration=no"
+    "top=500,left=200,frame=false,nodeIntegration=no,icon=favicon.ico"
   );
 }
