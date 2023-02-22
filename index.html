@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./skeleton.css">
+    <link rel="stylesheet" href="./skeleton.css" />
     <title>Nostalgy MU - LAUNCHER</title>
   </head>
   <body background="./bgxxxx.jpg">
     <h1>this is a test</h1>
     <div class="container">
-        <button onclick="executeMain()" class="button-85">PLAY</button>
-        <button onclick="executeConfig()" class="button-85">CONFIG</button>
+      <button onclick="executeMain()" class="button-85">PLAY</button>
+      <button id="config" onclick="executeConfig()" class="button-85">
+        CONFIG
+      </button>
+    </div>
+    <h1>RESOLUCION</h1>
+    <div class="row">
+      <div class="four columns">
+        <label class="radio">
+          <input name="radio" type="radio" onclick="changeRes1()" />
+          <span>800x600</span>
+        </label>
+        <label class="radio">
+          <input name="radio" type="radio" />
+          <span>1024x768</span>
+        </label>
+        <label class="radio">
+          <input name="radio" type="radio" />
+          <span>10280x1024</span>
+        </label>
+      </div>
+      <div class="four columns">
+        <label class="radio">
+          <input name="radio" type="radio" />
+          <span>1366x768</span>
+        </label>
+        <label class="radio">
+          <input name="radio" type="radio" />
+          <span>1440x900</span>
+        </label>
+        <label class="radio">
+          <input name="radio" type="radio" />
+          <span>1680x1050</span>
+        </label>
+        <label class="radio">
+          <input name="radio" type="radio" />
+          <span>1920x1080</span>
+        </label>
+      </div>
+    </div>
+    <div class="container">
+      <div class="progress-bar__container">
+        <div class="progress-bar">
+          <span class="progress-bar__text">Uploaded Successfully!</span>
+        </div>
+      </div>
     </div>
     <p>👋</p>
-    <script src = "./renderer.js"></script>
+    <script src="./renderer.js"></script>
   </body>
 </html>
